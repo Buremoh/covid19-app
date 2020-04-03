@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Age Personal</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+    <script src="js/script.js" defer></script>
+  </head>
+  <body>
+    <div class="card" style="width: 18rem;">
+        <img
+        class="card-img-top"
+        src="css/sneeze.jpg"
+        alt="Card image cap"
+        height="150px"
+      />      
+      <a href="personal-symptoms.html">Back</a>
+      <a href="index.html">Cancel</a>
+      <div class="card-body">       
+        <h5 class="card-title">COVID-19 Screening Tool</h5>
+        <p class="card-text">
+            <input type="radio" name=age id="child" onclick="checkSubmit(this, 'redirect2')" />Less than 18</p>
+        </p>
+        <p class="card-text">
+            <input type="radio" name=age id="young" onclick="checkSubmit(this, 'redirect2')" />Between 18 and 64</p>
+        </p>
+        <p class="card-text">
+            <input type="radio" name=age id="old" onclick="checkSubmit(this, 'redirect2')" />65 and older</p>
+        </p>
+        <center>
+        <button id="redirect2" onclick="redirect2()" name="sendbtn" disabled="disabled">Next</button>
+      </center>
+    </div>
+    </div>
+  </body>
+</html>

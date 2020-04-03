@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Others Symptoms</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+    <script src="js/script.js" defer></script>
+  </head>
+  <body>
+    <div class="card" style="width: 18rem;">
+      <img class="card-img-top" src="css/pippo.png" alt="Card image cap" />
+      <a href="instructions.html">back</a>
+      <a href="index.html">cancel</a>
+      <div class="card-body">
+        <h5 class="card-title">Is this an emergency?</h5>
+        <p class="card-text">
+          Stop and call 911 if they have any of these symptoms:
+        </p>
+        <p class="card-text">
+            <ul>
+                <li>Constant chest pain or pressure</li>
+                <li>Extreme difficulty breathing</li>
+                <li>Severe, constant dizziness or lightheadedness</li>
+                <li>Slurred speech</li>
+                <li>Difficulty waking up</li>
+            </ul>
+        </p>
+        <p class="card-text">
+            <input type="radio" name="symptoms" id="positive" onclick="checkSubmit(this, 'redirect5')" />They have at
+            least one of these symptoms</p>
+        </p>
+        <p class="card-text">
+            <input type="radio" name="symptoms"id="negative" onclick="checkSubmit(this, 'redirect5')"/>They do not have
+            any of these symptoms</p>
+        </p>
+        <center>
+            <button id="redirect5" onclick="redirect5()" name="sendbtn" disabled="disabled">Next</button>
+        </center>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instructions</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+    <script src="js/script.js" defer></script>
+  </head>
+  <body>
+    <div class="card" style="width: 18rem;">
+      <img
+        class="card-img-top"
+        src="css/mobile.jpg"
+        alt="Card image cap"
+        height="150px"
+      />
+      <a href="index.html">cancel</a>
+
+      <div class="card-body">
+        <h5 class="card-title">COVID-19 Screening Tool</h5>
+        <p class="card-text">
+          Please answer the following questions regarding symptoms,<br />
+          travel and contact you've had with others
+        </p>
+        <p class="card-text">Your answers will remain confidential</p>
+        <p class="card-text">
+          By using this tool, you agree to its its terms and conditions.
+        </p id="answer">
+        <center>
+        <p><button onclick="submitResponse()" id="btn" class="btn-submit"><a href="personal-symptoms.html">Myself</button></a></p>
+        <p><button onclick="submitResponse()" id="btn" class="btn-submit"><a href="others-symptoms.html">Others</button></a></p>
+      </center>
+    </div>
+    </div>
+  </body>
+</html>
